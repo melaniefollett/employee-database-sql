@@ -12,25 +12,17 @@ CREATE TABLE "departments" (
 );
 
 CREATE TABLE "dept_emp" (
-    "dept_emp_no" INTEGER   NOT NULL,
     "emp_no" INTEGER   NOT NULL,
     "dept_no" VARCHAR(255)   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_dept_emp" PRIMARY KEY (
-        "dept_emp_no"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "dept_manager" (
-    "manager_no" INTEGER   NOT NULL,
     "dept_no" VARCHAR(255)   NOT NULL,
     "emp_no" INTEGER   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_dept_manager" PRIMARY KEY (
-        "manager_no"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "employees" (
@@ -46,25 +38,17 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "salaries" (
-    "salary_no" INTEGER   NOT NULL,
     "emp_no" INTEGER   NOT NULL,
     "salary" INTEGER   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_salaries" PRIMARY KEY (
-        "salary_no"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "titles" (
-    "title_no" INTEGER   NOT NULL,
     "emp_no" INTEGER   NOT NULL,
     "title" VARCHAR(255)   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_titles" PRIMARY KEY (
-        "title_no"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
