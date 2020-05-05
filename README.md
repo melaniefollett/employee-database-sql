@@ -1,4 +1,4 @@
-# Employee Database: A Mystery in Two Parts
+# Investigating an Employee Database with SQL
 
 This is a research project on mock data for employees of a corporation from the 1980s and 1990s. All that remained of the database of employees from that period were six CSV files.
 I performed data modeling, engineering, and analysis on the employee data.  Specifically, I designed tables to hold the data in the CSVs, imported the CSVs into a SQL database, and analyzed the data in order to answer questions.
