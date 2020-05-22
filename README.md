@@ -21,4 +21,4 @@ Finally I queried the database to determine the following (queries.sql):
 - In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 # Additional Analysis
-To determine the authenticity of the data, I loaded the SQL database into a Jupyter Notebook (Bonus.ipynb) so I could investigate it forther with Pandas.  I created a histogram to visualize the most common salary ranges for employees.  I also created a bar chart of average salary by title.  I found that staff and senior staff employees had higher salaries than higher level positions like managers and senior engineers.  This suggests that the data is falsified.
+To determine the authenticity of the data, I loaded the SQL database into a Jupyter Notebook (Bonus.ipynb) so I could investigate it further with Pandas.  I created a histogram to visualize the most common salary ranges for employees.  I also created a bar chart of average salary by title.  I found that staff and senior staff employees had higher salaries than higher level positions like managers and senior engineers.  This suggests that the data is falsified.
